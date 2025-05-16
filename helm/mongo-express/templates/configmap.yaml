@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mongo-express-config
+data:
+  mongo-server: "{{ .Values.mongodb.databaseUrl}}"
+  mongo-port: "{{ .Values.mongodb.port }}"

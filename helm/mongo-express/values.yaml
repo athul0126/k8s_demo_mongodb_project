@@ -1,0 +1,17 @@
+image:
+  repository: mongo-express
+  tag: latest
+  pullPolicy: IfNotPresent
+
+containerPort: 8081
+
+service:
+  type: NodePort
+  port: 8081
+
+mongodb:
+  # host: mongodb-service
+  databaseUrl: mongodb-service
+  port: 27017
+  username: dXNlcm5hbWU=
+  password: cGFzc3dvcmQ
